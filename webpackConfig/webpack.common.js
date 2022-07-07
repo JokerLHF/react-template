@@ -15,7 +15,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
   },
 
   module: {
@@ -27,9 +27,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              "presets": ["@babel/preset-env", ["@babel/preset-react", {
-                "runtime": "automatic"
-              }]]
+              "presets": ["@babel/preset-env", "@babel/preset-react"],
             }
           },
           'ts-loader',

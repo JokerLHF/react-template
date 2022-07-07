@@ -3,13 +3,13 @@ const commonConfig = require('./webpack.common.js');
 const { merge } = require('webpack-merge');
 
 const devConfig = {
-  devtool: '#cheap-module-eval-source-map',
+  devtool: false,
 
   mode: 'development',
 
   devServer: {
     host: '0.0.0.0',
-    port: 3001,
+    port: 9001,
     hot: true
   },
 
